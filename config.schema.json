@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
+  "pluginAlias": "RadioThermostats",
   "pluginType": "platform",
   "singular": true,
   "schema": {

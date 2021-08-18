@@ -1,19 +1,19 @@
 {
   "private": true,
-  "displayName": "Plugin Name",
-  "name": "homebridge-plugin-name",
+  "displayName": "Radio Thermostats",
+  "name": "@Phernost/homebridge-radio-thermostats",
   "version": "1.0.0",
-  "description": "A short description about what your plugin does.",
+  "description": "Support for CT50 thermostats.",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/USERNAME/GITHUB_PROJECT_NAME.git"
+    "url": "git://github.com/Phernost/homebridge-radio-thermostats.git"
   },
   "bugs": {
-    "url": "https://github.com/USERNAME/GITHUB_PROJECT_NAME/issues"
+    "url": "https://github.com/Phernost/homebridge-radio-thermostats/issues"
   },
   "engines": {
-    "node": ">=12.13.0",
+    "node": ">=14.17.5",
     "homebridge": ">=1.3.0"
   },
   "main": "dist/index.js",
@@ -24,7 +24,9 @@
     "prepublishOnly": "npm run lint && npm run build"
   },
   "keywords": [
-    "homebridge-plugin"
+    "homebridge-plugin",
+    "thermostat",
+    "ct50"
   ],
   "dependencies": {},
   "devDependencies": {
@@ -32,10 +34,11 @@
     "@typescript-eslint/eslint-plugin": "^4.16.1",
     "@typescript-eslint/parser": "^4.16.1",
     "eslint": "^7.21.0",
-    "homebridge": "^1.3.1",
+    "homebridge": "^1.3.4",
     "nodemon": "^2.0.7",
     "rimraf": "^3.0.2",
     "ts-node": "^9.1.1",
-    "typescript": "^4.2.2"
+    "typescript": "^4.2.2",
+    "bent": "^7.3.12"
   }
 }
