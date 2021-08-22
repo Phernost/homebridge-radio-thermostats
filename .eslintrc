@@ -15,12 +15,12 @@
   "rules": {
     "quotes": ["warn", "single"],
     "indent": ["warn", 2, { "SwitchCase": 1 }],
-    "semi": ["off"],
+    "semi": ["warn"],
     "comma-dangle": ["warn", "always-multiline"],
     "dot-notation": "off",
     "eqeqeq": "warn",
-    "curly": ["warn", "all"],
-    "brace-style": ["warn"],
+    "curly": ["warn", "multi"],
+    "brace-style": ["warn", "1tbs", { "allowSingleLine": true }],
     "prefer-arrow-callback": ["warn"],
     "max-len": ["warn", 140],
     "no-console": ["warn"], // use the provided Homebridge log method instead
@@ -33,6 +33,40 @@
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/semi": ["warn"],
-    "@typescript-eslint/member-delimiter-style": ["warn"]
+    "@typescript-eslint/member-delimiter-style": ["warn"],
+    "func-call-spacing": "off",
+    "@typescript-eslint/func-call-spacing": ["warn", "never"],
+    "object-curly-spacing": ["warn", "always"],
+    "array-bracket-spacing": ["warn", "always"],
+    "keyword-spacing": "off",
+    "@typescript-eslint/keyword-spacing": ["warn", { "overrides": {
+      "if": { "after": false },
+      "for": { "after": false },
+      "while": { "after": false },
+      "switch": { "after": false },
+      "catch": { "after": false }
+    } } ],
+    "no-whitespace-before-property": "warn",
+    "space-before-function-paren": ["warn", {
+      "named": "never",
+      "anonymous": "always",
+      "asyncArrow": "always"
+    }],
+    "space-in-parens": ["warn", "always", { "exceptions": ["empty"] }],
+    "space-infix-ops": ["warn", { "int32Hint": false }],
+    "space-unary-ops": ["warn", {
+        "words": true,
+        "nonwords": false,
+        "overrides": {
+          "!": true,
+          "!!": true
+        }
+    }],
+    "computed-property-spacing": ["warn", "always"],
+    "arrow-spacing": "warn",
+    "generator-star-spacing": ["warn", "both"],
+    "yield-star-spacing": ["warn", "both"],
+    "rest-spread-spacing": ["warn", "always"]
+
   }
 }
